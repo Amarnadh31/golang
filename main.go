@@ -12,7 +12,7 @@ import (
 
 func main(){
 
-	filecopy.Copyfile()
+	filecopy.Copyfile() // calling Copyfile function from filecopy package
 
 	// bookingapp.GreetUser() // calling Greetuser function from BookingApp package
 
