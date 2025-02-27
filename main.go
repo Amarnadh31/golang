@@ -2,7 +2,8 @@ package main
 
 import (
 	// "fmt"
-	"golang/golang/BookingApp"
+	"golang/golang/filecopy"
+	// "golang/golang/BookingApp"
 	// "fmt"
 	// "golang/golang/structs-methods"
 	// "golang/golang/functions"
@@ -11,11 +12,14 @@ import (
 
 func main(){
 
-	bookingapp.GreetUser()
+	filecopy.Copyfile()
 
-	userInputs := bookingapp.UserDetails{}
+	// bookingapp.GreetUser() // calling Greetuser function from BookingApp package
 
-	userInputs.GettingUser()
+	// userInputs := bookingapp.UserDetails{} //calling UserDetails struct from BookingApp package ad storing in userInputs
+
+	// userInputs.GettingUserDetails() //Calling GettingUserDetails function from BookingApp package
+
 
 
 //////////////structs&methods///////////////////////

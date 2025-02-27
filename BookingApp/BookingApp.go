@@ -21,7 +21,7 @@ func GreetUser(){
 	fmt.Println("###########Welcome to our Booking service############")
 }
 
-func (u *UserDetails)GettingUser(){
+func (u *UserDetails)GettingUserDetails(){
 
 	const totalTicktes uint = 100
 	availableTickets := totalTicktes
