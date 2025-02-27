@@ -17,7 +17,7 @@ func Copyfile(){
 	}
 	defer src.Close() //using defer to close the file properly even if any error occurs defer closes file properly
 
-	// dest, err := os.Create(destinationfile) //os.create used to create the file if destination file is not created
+	// dest, err := os.Create(destinationfile) //os.create used to create the file if destination file is not created and whenever you copy it overwrites the data
 	dest, err := os.OpenFile(destinationfile, os.O_APPEND| os.O_CREATE |os.O_WRONLY , 0664) //os.OpenFile is used to copy the content on already existed file
 	if err != nil {
 		fmt.Println("destination file having some issue",err)
