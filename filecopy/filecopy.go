@@ -7,8 +7,8 @@ import (
 )
 
 func Copyfile(){
-	sourcefile := "D:\\go-lang\\sourcefile.txt" // source file path
-	destinationfile := "D:\\go-lang\\destination.txt" //destination file path
+	sourcefile := "D:\\go-lang\\filecopy\\sourcefile.txt" // source file path
+	destinationfile := "D:\\go-lang\\filecopy\\destination.txt" //destination file path
 
 	src, err := os.Open(sourcefile) //using os.Open() from os package to open the source file 
 	if err != nil {
