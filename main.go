@@ -2,16 +2,26 @@ package main
 
 import (
 	// "fmt"
-	"golang/golang/structs-methods"
+	"golang/golang/BookingApp"
+	// "fmt"
+	// "golang/golang/structs-methods"
 	// "golang/golang/functions"
 	// "golang/golang/loops" // importing loops func to main
 )
 
 func main(){
 
-	account := methods.BankAccount{}
+	bookingapp.GreetUser()
 
-	account.Passbook()
+	userInputs := bookingapp.UserDetails{}
+
+	userInputs.GettingUser()
+
+
+//////////////structs&methods///////////////////////
+	// account := methods.BankAccount{}
+	// account.Passbook()
+	////////////////loops/////////////////////
 	// loops.LoopsFunc() //calling the loop func
 	// var temp float64
 	
@@ -27,7 +37,7 @@ func main(){
 	// 	}
 	// 	break
 	// }
-
+/////////////////////////functions//////////////////////
 	// normaltemp := functions.Weather(temp)
 
 	// fmt.Println("Farenheit Temp : ", normaltemp)
