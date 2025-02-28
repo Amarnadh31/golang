@@ -26,9 +26,8 @@ func (u *UserDetails)GettingUserDetails(){
 	const totalTicktes uint = 100
 	availableTickets := totalTicktes
 
-	
-	
 	for{
+
 		for {
 			fmt.Println("Please enter your first name:")
 			fmt.Scan(&u.firstName)
@@ -112,9 +111,6 @@ func (u *UserDetails)GettingUserDetails(){
 
 		fmt.Printf("We will shortly send you booking details to %v\n", u.email)
 
-
-
-		
 		go func (email string){
 			time.Sleep(10 * time.Second)
 			fmt.Printf("*************Cograts! your tickets are successfully sent to %v ******************\n", email)
